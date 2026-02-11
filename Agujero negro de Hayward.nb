@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4172,        130]
+NotebookOptionsPosition[      3244,        105]
+NotebookOutlinePosition[      3655,        121]
+CellTagsIndexPosition[      3612,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Agujero negro de Hayward", "Title",
+ CellChangeTimes->{{3.979368609545187*^9, 
+  3.9793686191710663`*^9}},ExpressionUUID->"a7028aa7-d16e-304a-85c2-\
+d7185908282e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"h", "[", "r_", "]"}], ":=", 
+  RowBox[{"1", "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"2", "*", "M", "*", 
+      RowBox[{"r", "^", "2"}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"r", "^", "3"}], "+", 
+      RowBox[{"2", "*", "M", "*", 
+       RowBox[{"l", "^", "2"}]}]}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.979368663545149*^9, 3.979368725930235*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"88d47540-3bf7-0241-8b43-cfae4f5a58a8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"h", "[", "r", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "Infinity", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9793687324700184`*^9, 3.9793687387984753`*^9}, {
+  3.97936883124419*^9, 3.979368851814066*^9}, {3.9793689307350636`*^9, 
+  3.9793689598339767`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"3edb4730-6a57-2549-99ef-d6cc14eda08f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"1", "-", 
+   FractionBox[
+    RowBox[{"2", " ", "M"}], "r"], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", "r"], "]"}], "3"],
+    SeriesData[$CellContext`r, 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`r, 
+   DirectedInfinity[1], {1, (-2) $CellContext`M}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.9793688367693996`*^9, 3.9793688468360577`*^9}, {
+  3.979368937522831*^9, 3.9793689606710644`*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"0258ba0f-2f66-7a4f-83f7-830f0c4ed7fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"h", "[", "r", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.979368971458811*^9, 3.9793689745321674`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"b7af8acc-7bca-0d43-ab0d-0dbef8afcac9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"1", "-", 
+   FractionBox[
+    SuperscriptBox["r", "2"], 
+    SuperscriptBox["l", "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "r", "]"}], "3"],
+    SeriesData[$CellContext`r, 0, {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`r, 0, {1, 0, (-1) $CellContext`l^(-2)}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9793689756840744`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"c0b7d467-98c6-fa4f-9693-6ee1dfa7e034"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{144.75, Automatic}, {27.75, Automatic}},
+FrontEndVersion->"14.3 para Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3a98627b-1193-3743-83ce-d1fe7fd964c7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 169, 3, 96, "Title",ExpressionUUID->"a7028aa7-d16e-304a-85c2-d7185908282e"],
+Cell[748, 27, 501, 14, 28, "Input",ExpressionUUID->"88d47540-3bf7-0241-8b43-cfae4f5a58a8"],
+Cell[CellGroupData[{
+Cell[1274, 45, 426, 9, 42, "Input",ExpressionUUID->"3edb4730-6a57-2549-99ef-d6cc14eda08f"],
+Cell[1703, 56, 635, 17, 46, "Output",ExpressionUUID->"0258ba0f-2f66-7a4f-83f7-830f0c4ed7fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2375, 78, 316, 7, 42, "Input",ExpressionUUID->"b7af8acc-7bca-0d43-ab0d-0dbef8afcac9"],
+Cell[2694, 87, 522, 14, 49, "Output",ExpressionUUID->"c0b7d467-98c6-fa4f-9693-6ee1dfa7e034"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
